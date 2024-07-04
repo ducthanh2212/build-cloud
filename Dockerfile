@@ -6,7 +6,7 @@ FROM --platform=amd64 openjdk:17.0.2-oraclelinux8
 WORKDIR /app
 
 # Copy file JAR được build từ ứng dụng Spring Boot vào working directory trong container 
-COPY config/build/libs/config-0.0.1-SNAPSHOT-plain.jar app.jar
+COPY config-0.0.1-SNAPSHOT-plain.jar app.jar
 
 # Expose port của ứng dụng
 EXPOSE 8888
